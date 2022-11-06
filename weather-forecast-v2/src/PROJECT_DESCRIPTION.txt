@@ -1,0 +1,27 @@
+--> Project has '3'components '2'API '1'Context and used react-bootstrap
+--> One API in API folder other one in search-box-component
+
+-->Context: three context value
+    1:set the longitude(coming from API)
+    2:set the latitude(coming from API)
+    3:set the weatherInfo(coming from the API)
+
+-->geocode-API:(inside search-box-component)
+    -for getting coordinates from search-box SELECTED suggestion
+--> weather-API:(inside API folder)
+    -after getting coordinates get data and set it to 'weather-info' context
+
+--> map component:
+    -The Map component renders the map, default co-ordinates set to seattle
+    -when co-ordinates changes the component re renders displaying the 
+     respected place/city
+
+--> search-box component:
+     -renders the search box.
+     -Check inside the component for more weatherInfo
+
+--> weather-data component:
+     -displays the weatherData using weatherInfo Context Value  
+     -check inside for more info    
+
+--> dependency:react-bootstrap-typeahead, mapbox-gl,react-bootstrap     
